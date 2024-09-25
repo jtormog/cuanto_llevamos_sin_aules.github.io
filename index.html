@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body
+    style="color: pink; background-color: rgb(152, 89, 160); display: flex; font-family:  'Montserrat', sans-serif; font-optical-sizing: auto; font-style: normal;">
+    <div id="container" style="margin-top: 23%; margin-bottom: 20%; margin-left: auto; margin-right: auto;"></div>
+</body>
+<script>
+    const fechaInicioDeCurso = new Date(2024, 8, 9);
+    const fechaActual = new Date();
+    const diferenciaMilisegundos = fechaActual - fechaInicioDeCurso;
+    const milisegundosPorDia = 1000 * 60 * 60 * 24;
+    const diasPasados = Math.floor(diferenciaMilisegundos / milisegundosPorDia);
+    const nuevoH1 = document.createElement("h1");
+    nuevoH1.textContent = "Ya han pasado " + diasPasados + " días sin el puto aules";
+    const div = document.getElementById("container");
+    div.appendChild(nuevoH1);
+</script>
