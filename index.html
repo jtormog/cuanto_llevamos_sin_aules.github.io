@@ -12,12 +12,12 @@
 </body>
 <script>
     const fechaInicioDeCurso = new Date(2024, 8, 9);
-    const fechaActual = new Date();
-    const diferenciaMilisegundos = fechaActual - fechaInicioDeCurso;
+    const fechaAules = new Date(2024,9, 14);
+    const diferenciaMilisegundos = fechaAules - fechaInicioDeCurso;
     const milisegundosPorDia = 1000 * 60 * 60 * 24;
     const diasPasados = Math.floor(diferenciaMilisegundos / milisegundosPorDia);
     const nuevoH1 = document.createElement("h1");
-    nuevoH1.textContent = "Ya han pasado " + diasPasados + " días sin el puto aules";
+    nuevoH1.textContent = "Hemos estado " + diasPasados + " días sin el puto aules";
     const div = document.getElementById("container");
     div.appendChild(nuevoH1);
 </script>
